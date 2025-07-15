@@ -21,7 +21,7 @@ def predict_img(uploaded_file):
         st.success(f"🐶 Prediction: **Dog** ({prediction:.2f})")
     else:
         st.success(f"🐱 Prediction: **Cat** ({1 - prediction:.2f})")
-    st.image(uploaded_file, caption="Uploaded Image", use_column_width=True)
+    st.image(uploaded_file, caption="Uploaded Image")
 
 st.title('🐶🐱 Dog vs Cat Predictor')
 st.header("Upload an image of a **cat** or **dog**")
