@@ -28,6 +28,7 @@ st.header("Upload an image of a **cat** or **dog**")
 uploaded_file=st.file_uploader(label="📁 Upload Image", accept_multiple_files=False, type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
+
     if st.button("🔍 Predict"):
         predict_img(uploaded_file)
     
